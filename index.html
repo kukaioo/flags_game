@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="C:\javaScript-and-Node\gameforme\imgFlags">
+</head>
+<body>
+    <div class="game-container">
+     <h1 style="padding-left: 200px; padding-bottom: 20px;">The Flag Game
+        <button class="Main-menu" onclick="rotateimg()">Pro mode</button>
+        <button class="Main-menu" onclick="norotateimg()">back easy</button>
+     </h1>
+     <img class="imagflag" id="flagImage" alt="country flags">
+     <div id="Main-menu">max</div>
+     <div id="currentFlag">current </div>
+     <div id="score">Score = </div>
+     <div id="textnpc">Guess it!</div>
+
+     <div id="choices" class="cross"></div>
+    
+     <button id="restartbutton" onclick="resetGame()" style="display: none;" class="cross">Reset Game</button>
+     <div class="foot">
+        <p id="result"></p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
